@@ -1,13 +1,12 @@
 <html>
 <head>
-        <title>New Shit On Way</title>
+        <title>Gitting Ready</title>
 	</head>
 <body>
 <p>Please wait a bit.  I'm doing something.</p>
 <p>Still wanted to do this though.</p>
 <?php
- $lastfmurl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb
- 9591bbfed6";
+ $lastfmurl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6";
  $lastfmxml = simplexml_load_file($lastfmurl);
  $lastfmtrack =$lastfmxml->recenttracks->track;
 
