@@ -3,18 +3,8 @@
         <title>Gitting Ready</title>
 	</head>
 <body>
-<p>Please wait a bit.  I'm doing something.</p>
-<p>Still wanted to do this though.</p>
-<?php
- $lastfmurl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6";
- $lastfmxml = simplexml_load_file($lastfmurl);
- $lastfmtrack =$lastfmxml->recenttracks->track;
-
- if(strlen($lastfmtrack->artist) > 0)
- {
-  echo "<p><img src='".$lastfmtrack->image[2]."'></p>";
-  echo "<p>Hearing ".$lastfmtrack->artist."<br>".$lastfmtrack->name."<br>".$lastfmtrack->album."</p>";
- }
-?>
+<h1>David Johnson (davidj.org)</h1>
+<h3>Doings</h3>
+<p>Oh, a little of this... a little of that.</p>
 </body>
 </html>
